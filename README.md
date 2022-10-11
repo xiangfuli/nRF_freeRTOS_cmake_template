@@ -79,7 +79,7 @@ Compile
 --
 
 ```
-mkdir build & make
+mkdir build && cd build && cmake .. && make
 ```
 
 Flash
@@ -88,7 +88,7 @@ Flash
 After you have compile the whole project, using following command to flash the executable files
 
 ```
-cd build & make flash
+cd build && make flash
 ```
 
 
