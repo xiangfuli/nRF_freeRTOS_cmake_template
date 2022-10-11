@@ -14,6 +14,7 @@ SET(SIZE arm-none-eabi-size)
 SET(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 
 SET(CMAKE_COMPILE_FILES_DIR ${CMAKE_SOURCE_DIR}/compile_files)
+SET(FLASH_COMMAND nrfjprog)
 
 # project SETtings
 project(NRF_FREERTOS_CMAKE_TEMPLATE C CXX ASM)
@@ -98,4 +99,10 @@ add_custom_command(TARGET ${PROJECT_NAME}.elf POST_BUILD
     COMMAND ${CMAKE_OBJCOPY} -Obinary $<TARGET_FILE:${PROJECT_NAME}.elf> ${BIN_FILE}
     COMMENT "Building ${HEX_FILE}
             Building ${BIN_FILE}"
+)
+
+add_custom_target(flash
+    COMMAND ${FLASH_COMMAND} -f nrf52 --verify --program ${HEX_FILE} --sectorerase
+    COMMAND ${FLASH_COMMAND} -f nrf52 --reset
+    COMMENT "Flashing ${HEX_FILE}"    
 )
