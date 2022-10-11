@@ -46,13 +46,14 @@ include_directories(
     include/devices/mcus/nrf_commons
     include/devices/mcus/nrf52840
     include/devices/mcus/nrf52840/boot
-    include/devices/mcus/nrf52840/freeRTOS_port
+    include/devices/mcus/nrf52840/
     include/devices/mcus/nrf52840/it
     include/drivers
     include/drivers/hal
     include/drivers/nrfx
     include/drivers/nrfx/prs
     include/freeRTOS
+    include/freeRTOS/freeRTOS_port/gcc
     include/system
 )
 
