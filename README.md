@@ -1,4 +1,4 @@
-CMake Template of project using nRF52840 with FreeRTOS (temprarily without SofeDevice)
+CMake Template of project using nRF52840 with FreeRTOS (temprarily without SoftDevice)
 ==
 
 This project is based on [nRF5 SDK v17.1.0](https://infocenter.nordicsemi.com/index.jsp?topic=%2Fsdk_nrf5_v16.0.0%2Fnrfx_migration_user_guide.html) and [FreeRTOS LTS 202012.05](https://www.freertos.org/a00104.html), you can download the SDK source code and the offline codes on the [official website](https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v17.x.x/).
