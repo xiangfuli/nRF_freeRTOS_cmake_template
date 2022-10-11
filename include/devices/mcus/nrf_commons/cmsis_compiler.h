@@ -22,8 +22,8 @@
  * limitations under the License.
  */
 
-#ifndef __CMSIS_COMPILER_H
-#define __CMSIS_COMPILER_H
+#ifndef CMSIS_COMPILER_H
+#define CMSIS_COMPILER_H
 
 #include <stdint.h>
 
@@ -279,5 +279,5 @@
 #endif
 
 
-#endif /* __CMSIS_COMPILER_H */
+#endif /* CMSIS_COMPILER_H */
 
